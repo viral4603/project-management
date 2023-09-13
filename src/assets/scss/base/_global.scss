@@ -1,0 +1,109 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+//sidebar styles
+.sidebar {
+    width: 240px;
+
+    .nav-link {
+        transition: all 0.4s;
+        border-left: 4px solid transparent;
+
+        &.active,
+        &:hover {
+            background-color: $info;
+            border-left: 4px solid $secondary;
+        }
+    }
+}
+
+.project-content {
+    .nav-link {
+        padding: 0;
+        transition: all 0.4s;
+        &:hover {
+            background-color: $info;
+        }
+    }
+}
+
+//project-items nav-link
+.project-items {
+    .nav-link {
+        position: relative;
+
+        &.active::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $primary;
+            bottom: -10px;
+        }
+    }
+}
+
+//project card styles
+.project-list .card {
+    cursor: pointer;
+    height: 200px;
+}
+
+//user-profile
+.user-profile {
+    height: 35px;
+    width: 35px;
+    background-color: #0c8272;
+}
+
+//custom icon for user
+.icon-user {
+    position: relative;
+
+    &::after {
+        font-size: 10px;
+        content: '\e907';
+        position: absolute;
+        right: -2px;
+        bottom: -1px;
+    }
+}
+
+//input grop addon search
+.input-group-text {
+    background-color: transparent !important;
+}
+
+.global-search-input,
+.project-filter-input {
+    border-left: none !important;
+    padding-left: 0px !important;
+}
+
+//cutomize filter-input
+.filter-search {
+    width: 250px !important;
+
+    .project-filter-input,
+    .input-group-text {
+        background-color: $filter-input-bg !important;
+        border: none !important;
+    }
+}
+
+//custome charcter logo
+.card-logo {
+    height: 50px;
+    width: 50px;
+    background-color: #0c8272;
+}
+
+//stat-icon
+.stat-icon {
+    height: 40px;
+    width: 40px;
+    background-color: $success;
+}

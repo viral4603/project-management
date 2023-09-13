@@ -1,0 +1,15 @@
+.task-card-container {
+    border-left: 2px solid blue;
+
+    &.Active {
+        border-left: 2px solid rgb(255, 0, 0);
+    }
+
+    &.Resolve {
+        border-left: 2px solid rgb(0, 255, 64);
+    }
+
+    &.Done {
+        border-left: 2px solid rgb(255, 0, 255);
+    }
+}

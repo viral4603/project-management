@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2bbzo1');
+  src:  url('fonts/icomoon.eot?2bbzo1#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2bbzo1') format('truetype'),
+    url('fonts/icomoon.woff?2bbzo1') format('woff'),
+    url('fonts/icomoon.svg?2bbzo1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-edit:before {
+  content: "\e911";
+}
+.icon-search:before {
+  content: "\e904";
+}
+.icon-star:before {
+  content: "\e91a";
+}
+.icon-bag:before {
+  content: "\e900";
+}
+.icon-refresh:before {
+  content: "\e912";
+}
+.icon-loop:before {
+  content: "\e91c";
+}
+.icon-arrow-up:before {
+  content: "\e909";
+}
+.icon-arrow-right:before {
+  content: "\e90a";
+}
+.icon-arrow-left:before {
+  content: "\e90b";
+}
+.icon-arrow-down:before {
+  content: "\e90c";
+}
+.icon-full-screen:before {
+  content: "\e90f";
+}
+.icon-close-fullscreen:before {
+  content: "\e910";
+}
+.icon-settings-fill:before {
+  content: "\e907";
+}
+.icon-graph:before {
+  content: "\e903";
+}
+.icon-graphic-eq:before {
+  content: "\e908";
+}
+.icon-minus-square:before {
+  content: "\e913";
+}
+.icon-plus-square:before {
+  content: "\e914";
+}
+.icon-arrow-right-circle:before {
+  content: "\e915";
+}
+.icon-arrow-left-circle:before {
+  content: "\e916";
+}
+.icon-plus-circle:before {
+  content: "\e917";
+}
+.icon-filter:before {
+  content: "\e918";
+}
+.icon-users:before {
+  content: "\e919";
+}
+.icon-user:before {
+  content: "\e905";
+}
+.icon-settings:before {
+  content: "\e906";
+}
+.icon-help-circle:before {
+  content: "\e901";
+}
+.icon-shopping-bag:before {
+  content: "\e902";
+}
+.icon-dots:before {
+  content: "\e91b";
+}
+.icon-plus:before {
+  content: "\e90d";
+}
+.icon-list:before {
+  content: "\e90e";
+}

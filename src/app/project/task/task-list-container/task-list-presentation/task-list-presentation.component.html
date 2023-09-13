@@ -1,0 +1,54 @@
+<div class="bg-white px-4 h-100">
+    <div class="d-flex py-1 border-bottom justify-content-between bg-white mx-0">
+        <h4>Task List</h4>
+    </div>
+    <div class="task-list-view py-1 row gx-2">
+        <div class="col-3">
+            <h6 class="px-2">New</h6>
+            <div class="example-container h-100 p-2">
+                <div cdkDropList #newList="cdkDropList" [cdkDropListData]="new" [cdkDropListConnectedTo]="[activeList]"
+                    class="example-list" (cdkDropListDropped)="drop($event)" class="h-100">
+                    <div class="example-box" *ngFor="let item of new" cdkDrag>
+                        <app-task-card [task]="item"></app-task-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <h6 class="px-2">Active</h6>
+            <div class="example-container h-100 p-2">
+                <div cdkDropList #activeList="cdkDropList" [cdkDropListData]="active"
+                    [cdkDropListConnectedTo]="[newList,resolvedList,closedList]" class="example-list"
+                    (cdkDropListDropped)="drop($event)" class="h-100">
+                    <div class="example-box" *ngFor="let item of active" cdkDrag>
+                        <app-task-card [task]="item"></app-task-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <h6 class="px-2">Resolve</h6>
+            <div class="example-container h-100 p-2">
+                <div cdkDropList #resolvedList="cdkDropList" [cdkDropListData]="resolve"
+                    [cdkDropListConnectedTo]="[activeList]" class="example-list" (cdkDropListDropped)="drop($event)"
+                    class="h-100">
+                    <div class="example-box" *ngFor="let item of resolve" cdkDrag>
+                        <app-task-card [task]="item"></app-task-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <h6 class="px-2">done</h6>
+            <div class="example-container h-100 p-2">
+                <div cdkDropList #closedList="cdkDropList" [cdkDropListData]="closed" class="example-list"
+                    (cdkDropListDropped)="drop($event)" class="h-100">
+                    <div class="example-box" *ngFor="let item of closed">
+                        <app-task-card [task]="item"></app-task-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
